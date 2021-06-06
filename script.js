@@ -66,3 +66,40 @@ for(i = 0; i < timeArray.length; i++ ){
 }
 
 
+//When user types something into .timeblock and clicks .saveBtn
+// then the text is saved in local storage
+
+
+var scheduleText = document.querySelector(".time-block");
+var saveBtn = document.querySelector(".saveBtn");
+
+renderLastRegistered();
+
+function displayMessage(type, message) {
+    scheduleText.textContent = message;
+    scheduleText.setAttribute("class", type);
+  }
+
+function renderLastRegistered() {
+var schedule = localStorage.getItem("schedule");
+
+if (!schedule) {
+    return;
+}
+scheduleText.textContent = schedule;
+}
+
+
+saveBtn.addEventListener("click", function(event) {
+event.preventDefault();
+
+var schedule = document.querySelector(".time-block").value;
+
+if (schedule === "") {
+    displayMessage("");
+} 
+else {
+    localStorage.setItem("schedule", schedule);
+    renderLastRegistered();
+}
+});
