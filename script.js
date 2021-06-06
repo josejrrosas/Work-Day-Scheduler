@@ -69,37 +69,191 @@ for(i = 0; i < timeArray.length; i++ ){
 //When user types something into .timeblock and clicks .saveBtn
 // then the text is saved in local storage
 
-
-var scheduleText = document.querySelector(".time-block");
-var saveBtn = document.querySelector(".saveBtn");
-
-renderLastRegistered();
-
-function displayMessage(type, message) {
-    scheduleText.textContent = message;
-    scheduleText.setAttribute("class", type);
+function time8() {
+    var textInput1 = document.querySelector("#time8am");
+    var textOuput1 = document.querySelector("#time8am");
+    var button1 = document.querySelector(".saveBtn1");
+  
+    button1.addEventListener("click", saveLocalStorage1);
+  
+    textOuput1.textContent = localStorage.getItem("text1");
+    textInput1.value = localStorage.getItem("text1");
+  
+    function saveLocalStorage1() {
+      localStorage.setItem("text1", textInput1.value);
+  
+      textOuput1.textContent = textInput1.value;
+    }
   }
+  time8();
+  
 
-function renderLastRegistered() {
-var schedule = localStorage.getItem("schedule");
+function time9() {
+    var textInput2 = document.querySelector("#time9am");
+    var textOuput2 = document.querySelector("#time9am");
+    var button2 = document.querySelector(".saveBtn2");
+  
+    button2.addEventListener("click", saveLocalStorage2);
+  
+    textOuput2.textContent = localStorage.getItem("text2");
+    textInput2.value = localStorage.getItem("text2");
+  
+    function saveLocalStorage2() {
+      localStorage.setItem("text2", textInput2.value);
+  
+      textOuput2.textContent = textInput2.value;
+    }
+  }
+  time9();
+  
 
-if (!schedule) {
-    return;
-}
-scheduleText.textContent = schedule;
-}
+function time10() {
+    var textInput3 = document.querySelector("#time10am");
+    var textOuput3 = document.querySelector("#time10am");
+    var button3 = document.querySelector(".saveBtn3");
+  
+    button3.addEventListener("click", saveLocalStorage3);
+  
+    textOuput3.textContent = localStorage.getItem("text3");
+    textInput3.value = localStorage.getItem("text3");
+  
+    function saveLocalStorage3() {
+      localStorage.setItem("text3", textInput3.value);
+  
+      textOuput3.textContent = textInput3.value;
+    }
+  }
+  time10();
+  
 
+function time11() {
+    var textInput4 = document.querySelector("#time11am");
+    var textOuput4 = document.querySelector("#time11am");
+    var button4 = document.querySelector(".saveBtn4");
+  
+    button4.addEventListener("click", saveLocalStorage4);
+  
+    textOuput4.textContent = localStorage.getItem("text4");
+    textInput4.value = localStorage.getItem("text4");
+  
+    function saveLocalStorage4() {
+      localStorage.setItem("text4", textInput4.value);
+  
+      textOuput4.textContent = textInput4.value;
+    }
+  }
+  time11();
+  
 
-saveBtn.addEventListener("click", function(event) {
-event.preventDefault();
+function time12() {
+    var textInput5 = document.querySelector("#time12pm");
+    var textOuput5 = document.querySelector("#time12pm");
+    var button5 = document.querySelector(".saveBtn5");
+  
+    button5.addEventListener("click", saveLocalStorage5);
+  
+    textOuput5.textContent = localStorage.getItem("text5");
+    textInput5.value = localStorage.getItem("text5");
+  
+    function saveLocalStorage5() {
+      localStorage.setItem("text5", textInput5.value);
+  
+      textOuput5.textContent = textInput5.value;
+    }
+  }
+  time12();
+  
 
-var schedule = document.querySelector(".time-block").value;
+function time1() {
+    var textInput6 = document.querySelector("#time1pm");
+    var textOuput6 = document.querySelector("#time1pm");
+    var button6 = document.querySelector(".saveBtn6");
+  
+    button6.addEventListener("click", saveLocalStorage6);
+  
+    textOuput6.textContent = localStorage.getItem("text6");
+    textInput6.value = localStorage.getItem("text6");
+  
+    function saveLocalStorage6() {
+      localStorage.setItem("text6", textInput6.value);
+  
+      textOuput6.textContent = textInput6.value;
+    }
+  }
+  time1();
+  
 
-if (schedule === "") {
-    displayMessage("");
-} 
-else {
-    localStorage.setItem("schedule", schedule);
-    renderLastRegistered();
-}
-});
+function time2() {
+    var textInput7 = document.querySelector("#time2pm");
+    var textOuput7 = document.querySelector("#time2pm");
+    var button7 = document.querySelector(".saveBtn7");
+  
+    button7.addEventListener("click", saveLocalStorage7);
+  
+    textOuput7.textContent = localStorage.getItem("text7");
+    textInput7.value = localStorage.getItem("text7");
+  
+    function saveLocalStorage7() {
+      localStorage.setItem("text7", textInput7.value);
+  
+      textOuput7.textContent = textInput7.value;
+    }
+  }
+  time2();
+  
+
+function time3() {
+    var textInput8 = document.querySelector("#time3pm");
+    var textOuput8 = document.querySelector("#time3pm");
+    var button8 = document.querySelector(".saveBtn8");
+  
+    button8.addEventListener("click", saveLocalStorage8);
+  
+    textOuput8.textContent = localStorage.getItem("text8");
+    textInput8.value = localStorage.getItem("text8");
+  
+    function saveLocalStorage8() {
+      localStorage.setItem("text8", textInput8.value);
+  
+      textOuput8.textContent = textInput8.value;
+    }
+  }
+  time3();
+  
+
+function time4() {
+    var textInput9 = document.querySelector("#time4pm");
+    var textOuput9 = document.querySelector("#time4pm");
+    var button9 = document.querySelector(".saveBtn9");
+  
+    button9.addEventListener("click", saveLocalStorage9);
+  
+    textOuput9.textContent = localStorage.getItem("text9");
+    textInput9.value = localStorage.getItem("text9");
+  
+    function saveLocalStorage9() {
+      localStorage.setItem("text9", textInput9.value);
+  
+      textOuput9.textContent = textInput9.value;
+    }
+  }
+  time4();
+
+function time5() {
+    var textInput10 = document.querySelector("#time5pm");
+    var textOuput10 = document.querySelector("#time5pm");
+    var button10 = document.querySelector(".saveBtn10");
+  
+    button10.addEventListener("click", saveLocalStorage10);
+  
+    textOuput10.textContent = localStorage.getItem("text10");
+    textInput10.value = localStorage.getItem("text10");
+  
+    function saveLocalStorage10() {
+      localStorage.setItem("text10", textInput10.value);
+  
+      textOuput10.textContent = textInput10.value;
+    }
+  }
+  time5();
+  
